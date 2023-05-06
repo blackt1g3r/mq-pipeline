@@ -22,7 +22,7 @@ echo "----------------------------------------------------------------------"
 
 release_name=${1:-qm1}
 namespace=${2:-mq}
-storageclass=${3:thin}  # ${3:-ibmc-block-gold} # fyre (using ocs): ocs-storagecluster-cephfs | ibm-cloud: ibmc-file-gold-gid
+storageclass=${3:-ocs-storagecluster-cephfs}  # ${3:-ibmc-block-gold} # fyre (using ocs): ocs-storagecluster-cephfs | ibm-cloud: ibmc-file-gold-gid
 ## https://www.ibm.com/docs/en/ibm-mq/9.2?topic=mqibmcomv1beta1-licensing-reference
 ## requires ibm-mq-v1.6-ibm-operator-catalog-openshift-marketplace
 qmgr_name=${4:-QM1}
