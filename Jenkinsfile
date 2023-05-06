@@ -3,7 +3,7 @@ pipeline {
     environment {
         IBM_ENTITLEMENT_KEY = credentials('ibm_entitlement_key')
         RELEASE_NAME        = "qm1"        
-        NAMESPACE           = "mq"
+        NAMESPACE           = "cp4i"
         STORAGE_CLASS       = "ocs-storagecluster-cephfs"
         QMGR_NAME           = "QM1"
         CHANNEL_NAME        = "QM1CHL"
