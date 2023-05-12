@@ -71,20 +71,17 @@ This ID is reference by the Jenkins pipeline to retrieve the value of the **Secr
 ## Enable Jenkins service account to create objects in OpenShift (from terminal)
 
 1. Run this command to find the service account in the namespace
+
 oc get sa -n jenkins
 
 The response should be:
 
-NAME                SECRETS AGE
-builder             2       73m
-default             2       73m
-deployer            2       73m
-jenkins-jenkins-kks 2       54m
-jenkins-operator    2       56m
+![Screenshot 2023-05-12 at 12 44 08](https://github.com/blackt1g3r/mq-pipeline/assets/14035593/9e49e1cd-77d8-49cc-bfad-59639872155d)
 
 2. Run this command to assign _cluster-admin_ role to the service account. I assigned _cluster-admin_ role, to simplify the setup; but you can create a custom role with the appropriates to do this.
 
-oc adm policy add-cluster-role-to-user cluster-admin system:serviceaccount:jenkins:jenkins-jenkins-kks
+![Screenshot 2023-05-12 at 12 44 33](https://github.com/blackt1g3r/mq-pipeline/assets/14035593/4b5fcf24-e025-4f98-83c8-cfe348bf43cb)
+
 
 # Configure a pipeline to build MQ queue manager (from Jenkins Console)
 
