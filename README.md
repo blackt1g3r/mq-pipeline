@@ -110,6 +110,13 @@ oc adm policy add-cluster-role-to-user cluster-admin system:serviceaccount:jenki
 4. You should see the status of the completed job (#3 as follows).
 ![image](https://github.com/blackt1g3r/mq-pipeline/assets/14035593/27eb3372-7793-440a-86ee-5859d27d7cd2)
 
+5. Pipeline finished
+![Screenshot 2023-05-12 at 11 42 03](https://github.com/blackt1g3r/mq-pipeline/assets/14035593/c9398397-ed9c-48d7-b103-b7117bfa62f7)
+
+6. ccess MQ console:
+
+![Screenshot 2023-05-12 at 11 44 29](https://github.com/blackt1g3r/mq-pipeline/assets/14035593/d6b9c380-c839-428b-b7a3-32e3d54e6b19)
+
 # Test the deployed queue manager (from terminal)
 1. Clone the git repository
 git clone https://github.com/blackt1g3/mq-pipeline.git
@@ -118,16 +125,16 @@ git clone https://github.com/blackt1g3/mq-pipeline.git
 
 3. Put a message.
 
-./mq-put.sh
-Sample AMQSPUT0 start
-target queue is APPQ
-TESTING
+ ./mq-put.sh
+ 
+![Screenshot 2023-05-12 at 11 35 19](https://github.com/blackt1g3r/mq-pipeline/assets/14035593/91eab5b8-e2a0-4132-b36c-5198bc9bd5ea)
 
 4. Get the message
 
 ./mq-get.sh
-Sample AMQSGET0 start
-message <TESTING>
+
+![Screenshot 2023-05-12 at 11 36 13](https://github.com/blackt1g3r/mq-pipeline/assets/14035593/3d1148b1-5e3c-4ff6-8ee4-db7321fa479d)
+
 
 
 
