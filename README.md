@@ -116,7 +116,7 @@ The response should be:
 
 # Test the deployed queue manager (from terminal)
 1. Clone the git repository
-git clone https://github.com/blackt1g3/mq-pipeline.git
+git clone https://github.com/blackt1g3r/mq-pipeline.git
 
 2. Go to the folder mq-pipeline/test and update the file ccdt.json.
 
